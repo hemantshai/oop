@@ -152,6 +152,37 @@ class Zoo:
 
 
 
+'''def perform_hunt(self, bait_animal, given_zoo):
+        bait_animal_string ={
+                                "Deer" : "deers",
+                                "GoldFish" : "GoldFish"
+                            }
+        temp = given_zoo.animals
+        bait_animal_count = 0
+        for animal in temp:
+            if bait_animal in str(type(animal)):
+                 bait_animal_count += 1
+                 
+        if bait_animal_count == 0:
+            print(f"No {bait_animal_string[bait_animal]} to hunt")
+        else:
+            count = 0
+            for animal in temp:
+                if bait_animal in str(type(animal)):
+                    given_zoo._animals.remove(animal)
+                    given_zoo.__class__.total_number_of_animals.remove(animal)
+                    count += 1
+                elif count != 0:
+                    break
+
+
+def hunt(self, given_zoo):
+        super().perform_hunt("GoldFish", given_zoo)'''
+        
+        
+        
+        
+        
 zoo = Zoo()
 
 
