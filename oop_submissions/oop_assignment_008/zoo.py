@@ -45,6 +45,7 @@ class land_animals:
 class Hunter:
     hunt_type="Buck Buck"
     hunt_value="No deers to hunt"
+    
     @classmethod
     def hunt(cls, zoo):
         count=0
@@ -52,7 +53,7 @@ class Hunter:
             if animal.sound == cls.hunt_type:
                 count=1
                 zoo.animals_list.remove(animal)
-                zoo.number_of_animals_in_all_zoos.append(animal)
+                zoo.number_of_animals_in_all_zoos.remove(animal)
                 break
         if count==0:
             print(cls.hunt_value)
