@@ -196,3 +196,7 @@ class Trainer:
         return self.pokemon_list
             
             
+            
+            
+            
+            
